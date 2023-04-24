@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12220ADB29F4D9A60077AB2D /* FeelingLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12220ADA29F4D9A60077AB2D /* FeelingLogView.swift */; };
+		12220ADD29F6415A0077AB2D /* AppColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12220ADC29F6415A0077AB2D /* AppColorSettings.swift */; };
+		12220ADF29F65A980077AB2D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12220ADE29F65A980077AB2D /* SettingsView.swift */; };
+		12220AE329F66C120077AB2D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12220AE229F66C120077AB2D /* WelcomeView.swift */; };
+		1245EB9029F46AEE00286BB4 /* FeelingTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245EB8F29F46AEE00286BB4 /* FeelingTrackerAppApp.swift */; };
+		1245EB9229F46AEE00286BB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245EB9129F46AEE00286BB4 /* ContentView.swift */; };
+		1245EB9429F46AF000286BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1245EB9329F46AF000286BB4 /* Assets.xcassets */; };
+		1245EB9729F46AF000286BB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1245EB9629F46AF000286BB4 /* Preview Assets.xcassets */; };
+		1245EBA129F46AF000286BB4 /* FeelingTrackerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245EBA029F46AF000286BB4 /* FeelingTrackerAppTests.swift */; };
+		1245EBAB29F46AF000286BB4 /* FeelingTrackerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245EBAA29F46AF000286BB4 /* FeelingTrackerAppUITests.swift */; };
+		1245EBAD29F46AF000286BB4 /* FeelingTrackerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245EBAC29F46AF000286BB4 /* FeelingTrackerAppUITestsLaunchTests.swift */; };
+		1245EBBA29F46B3D00286BB4 /* FeelingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245EBB929F46B3D00286BB4 /* FeelingData.swift */; };
+		1245EBBC29F46B5200286BB4 /* SharedModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245EBBB29F46B5200286BB4 /* SharedModules.swift */; };
+		1245EBC429F46B7F00286BB4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1245EBC329F46B7F00286BB4 /* WidgetKit.framework */; };
+		1245EBC629F46B7F00286BB4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1245EBC529F46B7F00286BB4 /* SwiftUI.framework */; };
+		1245EBC929F46B7F00286BB4 /* FTAWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245EBC829F46B7F00286BB4 /* FTAWidget.swift */; };
+		1245EBCC29F46B8100286BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1245EBCB29F46B8100286BB4 /* Assets.xcassets */; };
+		1245EBCE29F46B8100286BB4 /* FTAWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1245EBCA29F46B7F00286BB4 /* FTAWidget.intentdefinition */; };
+		1245EBCF29F46B8100286BB4 /* FTAWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1245EBCA29F46B7F00286BB4 /* FTAWidget.intentdefinition */; };
+		1245EBD229F46B8100286BB4 /* FTAWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1245EBC129F46B7F00286BB4 /* FTAWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1245EB9D29F46AF000286BB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1245EB8429F46AEE00286BB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1245EB8B29F46AEE00286BB4;
+			remoteInfo = FeelingTrackerApp;
+		};
+		1245EBA729F46AF000286BB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1245EB8429F46AEE00286BB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1245EB8B29F46AEE00286BB4;
+			remoteInfo = FeelingTrackerApp;
+		};
+		1245EBD029F46B8100286BB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1245EB8429F46AEE00286BB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1245EBC029F46B7F00286BB4;
+			remoteInfo = FTAWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1245EBD629F46B8100286BB4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1245EBD229F46B8100286BB4 /* FTAWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12220ADA29F4D9A60077AB2D /* FeelingLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingLogView.swift; sourceTree = "<group>"; };
+		12220ADC29F6415A0077AB2D /* AppColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorSettings.swift; sourceTree = "<group>"; };
+		12220ADE29F65A980077AB2D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		12220AE229F66C120077AB2D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1245EB8C29F46AEE00286BB4 /* FeelingTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelingTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1245EB8F29F46AEE00286BB4 /* FeelingTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingTrackerAppApp.swift; sourceTree = "<group>"; };
+		1245EB9129F46AEE00286BB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1245EB9329F46AF000286BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1245EB9629F46AF000286BB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1245EB9C29F46AF000286BB4 /* FeelingTrackerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingTrackerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1245EBA029F46AF000286BB4 /* FeelingTrackerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingTrackerAppTests.swift; sourceTree = "<group>"; };
+		1245EBA629F46AF000286BB4 /* FeelingTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingTrackerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1245EBAA29F46AF000286BB4 /* FeelingTrackerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingTrackerAppUITests.swift; sourceTree = "<group>"; };
+		1245EBAC29F46AF000286BB4 /* FeelingTrackerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingTrackerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1245EBB929F46B3D00286BB4 /* FeelingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeelingData.swift; path = "../../FeelingTracker2 copy/FeelingData.swift"; sourceTree = "<group>"; };
+		1245EBBB29F46B5200286BB4 /* SharedModules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedModules.swift; path = "../../FeelingTracker2 copy/SharedModules.swift"; sourceTree = "<group>"; };
+		1245EBC129F46B7F00286BB4 /* FTAWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FTAWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1245EBC329F46B7F00286BB4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1245EBC529F46B7F00286BB4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1245EBC829F46B7F00286BB4 /* FTAWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTAWidget.swift; sourceTree = "<group>"; };
+		1245EBCA29F46B7F00286BB4 /* FTAWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FTAWidget.intentdefinition; sourceTree = "<group>"; };
+		1245EBCB29F46B8100286BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1245EBCD29F46B8100286BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1245EB8929F46AEE00286BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EB9929F46AF000286BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EBA329F46AF000286BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EBBE29F46B7F00286BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1245EBC629F46B7F00286BB4 /* SwiftUI.framework in Frameworks */,
+				1245EBC429F46B7F00286BB4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1245EB8329F46AEE00286BB4 = {
+			isa = PBXGroup;
+			children = (
+				12220AE229F66C120077AB2D /* WelcomeView.swift */,
+				12220ADE29F65A980077AB2D /* SettingsView.swift */,
+				12220ADC29F6415A0077AB2D /* AppColorSettings.swift */,
+				12220ADA29F4D9A60077AB2D /* FeelingLogView.swift */,
+				1245EBBB29F46B5200286BB4 /* SharedModules.swift */,
+				1245EBB929F46B3D00286BB4 /* FeelingData.swift */,
+				1245EB8E29F46AEE00286BB4 /* FeelingTrackerApp */,
+				1245EB9F29F46AF000286BB4 /* FeelingTrackerAppTests */,
+				1245EBA929F46AF000286BB4 /* FeelingTrackerAppUITests */,
+				1245EBC729F46B7F00286BB4 /* FTAWidget */,
+				1245EBC229F46B7F00286BB4 /* Frameworks */,
+				1245EB8D29F46AEE00286BB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1245EB8D29F46AEE00286BB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1245EB8C29F46AEE00286BB4 /* FeelingTrackerApp.app */,
+				1245EB9C29F46AF000286BB4 /* FeelingTrackerAppTests.xctest */,
+				1245EBA629F46AF000286BB4 /* FeelingTrackerAppUITests.xctest */,
+				1245EBC129F46B7F00286BB4 /* FTAWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1245EB8E29F46AEE00286BB4 /* FeelingTrackerApp */ = {
+			isa = PBXGroup;
+			children = (
+				1245EB8F29F46AEE00286BB4 /* FeelingTrackerAppApp.swift */,
+				1245EB9129F46AEE00286BB4 /* ContentView.swift */,
+				1245EB9329F46AF000286BB4 /* Assets.xcassets */,
+				1245EB9529F46AF000286BB4 /* Preview Content */,
+			);
+			path = FeelingTrackerApp;
+			sourceTree = "<group>";
+		};
+		1245EB9529F46AF000286BB4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1245EB9629F46AF000286BB4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1245EB9F29F46AF000286BB4 /* FeelingTrackerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1245EBA029F46AF000286BB4 /* FeelingTrackerAppTests.swift */,
+			);
+			path = FeelingTrackerAppTests;
+			sourceTree = "<group>";
+		};
+		1245EBA929F46AF000286BB4 /* FeelingTrackerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1245EBAA29F46AF000286BB4 /* FeelingTrackerAppUITests.swift */,
+				1245EBAC29F46AF000286BB4 /* FeelingTrackerAppUITestsLaunchTests.swift */,
+			);
+			path = FeelingTrackerAppUITests;
+			sourceTree = "<group>";
+		};
+		1245EBC229F46B7F00286BB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1245EBC329F46B7F00286BB4 /* WidgetKit.framework */,
+				1245EBC529F46B7F00286BB4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1245EBC729F46B7F00286BB4 /* FTAWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1245EBC829F46B7F00286BB4 /* FTAWidget.swift */,
+				1245EBCA29F46B7F00286BB4 /* FTAWidget.intentdefinition */,
+				1245EBCB29F46B8100286BB4 /* Assets.xcassets */,
+				1245EBCD29F46B8100286BB4 /* Info.plist */,
+			);
+			path = FTAWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1245EB8B29F46AEE00286BB4 /* FeelingTrackerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1245EBB029F46AF000286BB4 /* Build configuration list for PBXNativeTarget "FeelingTrackerApp" */;
+			buildPhases = (
+				1245EB8829F46AEE00286BB4 /* Sources */,
+				1245EB8929F46AEE00286BB4 /* Frameworks */,
+				1245EB8A29F46AEE00286BB4 /* Resources */,
+				1245EBD629F46B8100286BB4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1245EBD129F46B8100286BB4 /* PBXTargetDependency */,
+			);
+			name = FeelingTrackerApp;
+			productName = FeelingTrackerApp;
+			productReference = 1245EB8C29F46AEE00286BB4 /* FeelingTrackerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1245EB9B29F46AF000286BB4 /* FeelingTrackerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1245EBB329F46AF000286BB4 /* Build configuration list for PBXNativeTarget "FeelingTrackerAppTests" */;
+			buildPhases = (
+				1245EB9829F46AF000286BB4 /* Sources */,
+				1245EB9929F46AF000286BB4 /* Frameworks */,
+				1245EB9A29F46AF000286BB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1245EB9E29F46AF000286BB4 /* PBXTargetDependency */,
+			);
+			name = FeelingTrackerAppTests;
+			productName = FeelingTrackerAppTests;
+			productReference = 1245EB9C29F46AF000286BB4 /* FeelingTrackerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1245EBA529F46AF000286BB4 /* FeelingTrackerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1245EBB629F46AF000286BB4 /* Build configuration list for PBXNativeTarget "FeelingTrackerAppUITests" */;
+			buildPhases = (
+				1245EBA229F46AF000286BB4 /* Sources */,
+				1245EBA329F46AF000286BB4 /* Frameworks */,
+				1245EBA429F46AF000286BB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1245EBA829F46AF000286BB4 /* PBXTargetDependency */,
+			);
+			name = FeelingTrackerAppUITests;
+			productName = FeelingTrackerAppUITests;
+			productReference = 1245EBA629F46AF000286BB4 /* FeelingTrackerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1245EBC029F46B7F00286BB4 /* FTAWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1245EBD329F46B8100286BB4 /* Build configuration list for PBXNativeTarget "FTAWidgetExtension" */;
+			buildPhases = (
+				1245EBBD29F46B7F00286BB4 /* Sources */,
+				1245EBBE29F46B7F00286BB4 /* Frameworks */,
+				1245EBBF29F46B7F00286BB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTAWidgetExtension;
+			productName = FTAWidgetExtension;
+			productReference = 1245EBC129F46B7F00286BB4 /* FTAWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1245EB8429F46AEE00286BB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1245EB8B29F46AEE00286BB4 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1245EB9B29F46AF000286BB4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1245EB8B29F46AEE00286BB4;
+					};
+					1245EBA529F46AF000286BB4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1245EB8B29F46AEE00286BB4;
+					};
+					1245EBC029F46B7F00286BB4 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1245EB8729F46AEE00286BB4 /* Build configuration list for PBXProject "FeelingTrackerApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1245EB8329F46AEE00286BB4;
+			productRefGroup = 1245EB8D29F46AEE00286BB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1245EB8B29F46AEE00286BB4 /* FeelingTrackerApp */,
+				1245EB9B29F46AF000286BB4 /* FeelingTrackerAppTests */,
+				1245EBA529F46AF000286BB4 /* FeelingTrackerAppUITests */,
+				1245EBC029F46B7F00286BB4 /* FTAWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1245EB8A29F46AEE00286BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1245EB9729F46AF000286BB4 /* Preview Assets.xcassets in Resources */,
+				1245EB9429F46AF000286BB4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EB9A29F46AF000286BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EBA429F46AF000286BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EBBF29F46B7F00286BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1245EBCC29F46B8100286BB4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1245EB8829F46AEE00286BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12220ADB29F4D9A60077AB2D /* FeelingLogView.swift in Sources */,
+				12220ADF29F65A980077AB2D /* SettingsView.swift in Sources */,
+				12220ADD29F6415A0077AB2D /* AppColorSettings.swift in Sources */,
+				1245EB9229F46AEE00286BB4 /* ContentView.swift in Sources */,
+				12220AE329F66C120077AB2D /* WelcomeView.swift in Sources */,
+				1245EB9029F46AEE00286BB4 /* FeelingTrackerAppApp.swift in Sources */,
+				1245EBBC29F46B5200286BB4 /* SharedModules.swift in Sources */,
+				1245EBBA29F46B3D00286BB4 /* FeelingData.swift in Sources */,
+				1245EBCF29F46B8100286BB4 /* FTAWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EB9829F46AF000286BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1245EBA129F46AF000286BB4 /* FeelingTrackerAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EBA229F46AF000286BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1245EBAD29F46AF000286BB4 /* FeelingTrackerAppUITestsLaunchTests.swift in Sources */,
+				1245EBAB29F46AF000286BB4 /* FeelingTrackerAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1245EBBD29F46B7F00286BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1245EBCE29F46B8100286BB4 /* FTAWidget.intentdefinition in Sources */,
+				1245EBC929F46B7F00286BB4 /* FTAWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1245EB9E29F46AF000286BB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1245EB8B29F46AEE00286BB4 /* FeelingTrackerApp */;
+			targetProxy = 1245EB9D29F46AF000286BB4 /* PBXContainerItemProxy */;
+		};
+		1245EBA829F46AF000286BB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1245EB8B29F46AEE00286BB4 /* FeelingTrackerApp */;
+			targetProxy = 1245EBA729F46AF000286BB4 /* PBXContainerItemProxy */;
+		};
+		1245EBD129F46B8100286BB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1245EBC029F46B7F00286BB4 /* FTAWidgetExtension */;
+			targetProxy = 1245EBD029F46B8100286BB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1245EBAE29F46AF000286BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1245EBAF29F46AF000286BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1245EBB129F46AF000286BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FeelingTrackerApp/Preview Content\"";
+				DEVELOPMENT_TEAM = U4WVHYYV4X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AM.FeelingTrackerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1245EBB229F46AF000286BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FeelingTrackerApp/Preview Content\"";
+				DEVELOPMENT_TEAM = U4WVHYYV4X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AM.FeelingTrackerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1245EBB429F46AF000286BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AM.FeelingTrackerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeelingTrackerApp.app/FeelingTrackerApp";
+			};
+			name = Debug;
+		};
+		1245EBB529F46AF000286BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AM.FeelingTrackerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeelingTrackerApp.app/FeelingTrackerApp";
+			};
+			name = Release;
+		};
+		1245EBB729F46AF000286BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AM.FeelingTrackerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeelingTrackerApp;
+			};
+			name = Debug;
+		};
+		1245EBB829F46AF000286BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AM.FeelingTrackerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeelingTrackerApp;
+			};
+			name = Release;
+		};
+		1245EBD429F46B8100286BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4WVHYYV4X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FTAWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FTAWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AM.FeelingTrackerApp.FTAWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1245EBD529F46B8100286BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4WVHYYV4X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FTAWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FTAWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AM.FeelingTrackerApp.FTAWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1245EB8729F46AEE00286BB4 /* Build configuration list for PBXProject "FeelingTrackerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1245EBAE29F46AF000286BB4 /* Debug */,
+				1245EBAF29F46AF000286BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1245EBB029F46AF000286BB4 /* Build configuration list for PBXNativeTarget "FeelingTrackerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1245EBB129F46AF000286BB4 /* Debug */,
+				1245EBB229F46AF000286BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1245EBB329F46AF000286BB4 /* Build configuration list for PBXNativeTarget "FeelingTrackerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1245EBB429F46AF000286BB4 /* Debug */,
+				1245EBB529F46AF000286BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1245EBB629F46AF000286BB4 /* Build configuration list for PBXNativeTarget "FeelingTrackerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1245EBB729F46AF000286BB4 /* Debug */,
+				1245EBB829F46AF000286BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1245EBD329F46B8100286BB4 /* Build configuration list for PBXNativeTarget "FTAWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1245EBD429F46B8100286BB4 /* Debug */,
+				1245EBD529F46B8100286BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1245EB8429F46AEE00286BB4 /* Project object */;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FTAWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FeelingTrackerApp.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1245EB8B29F46AEE00286BB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1245EB9B29F46AF000286BB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1245EBA529F46AF000286BB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1245EBC029F46B7F00286BB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
